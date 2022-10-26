@@ -1,0 +1,150 @@
+// *TODO Сбросить дефолтные стили
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+// *TODO Стили шапки
+.nav__section {
+    .nav__container {
+
+        // *TODO Верхний слой шапки
+        .nav__top {
+            background: rgb(221, 221, 221);
+            background-image: url(../images/header_mask.png);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            padding: 0px 100px;
+
+            height: 43px;
+
+            border-bottom: 1px rgb(160, 160, 160) solid;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+
+            font-family: 'Roboto', sans-serif;
+
+
+            .nav__top-link {
+                color: rgb(124, 124, 124);
+                text-decoration: none;
+            }
+
+            .nav__top-link:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        // *TODO Средний слой шапки
+        .nav__contacts {
+            padding: 0px 100px;
+            margin: 20px 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+
+            color: #666;
+
+            .logo {
+                height: 45px;
+            }
+
+            .contacts__info-container {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                .contacts__info {
+                    display: flex;
+                    flex-direction: column;
+
+                    .text-highlight-1 {
+                        color: #71a9ab;
+                    }
+                }
+            }
+
+            .cart__container {
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+
+                gap: 10px;
+
+                .cart-icon {
+                    height: 45px;
+                }
+
+                // *TODO Выделение для кол-ва товаров
+                .text-highlight-2 {
+                    color: #71a9ab;
+                    text-decoration: underline dashed;
+                }
+
+                // *TODO Цена в корзине
+                .text-price {
+                    color: #71a9ab;
+                }
+
+            }
+
+        }
+
+        // *TODO Контейнер навигации
+        .nav__bottom {
+            padding: 10px 100px;
+
+            background-image: url(../images/menu_bg.png);
+            background: #6ba5a7;
+            background-size: contain;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+
+
+            .navigation-links {
+                display: flex;
+                gap: 30px;
+            }
+
+            .navigation-links>a {
+                text-decoration: none;
+                color: #FFF;
+            }
+
+            .navigation-link:hover {
+                text-decoration: underline;
+            }
+
+            // *TODO Поисковая строка
+            .search-bar {
+                padding-right: 25px;
+                background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+                background-size: 25px;
+                background-color: #fff;
+                border: none;
+
+                cursor: pointer;
+
+                padding: 5px;
+                width: 400px;
+            }
+
+        }
+    }
+}

@@ -1,13 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Askerweb Website</title>
+    <link rel="stylesheet" href="./src/scss/style.css">
+    <!-- Шрифты (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <!-- ? Шапка -->
+    <nav class="nav__section">
+        <div class="nav__container">
+            <!-- Верхний слой шапки -->
+            <div class="nav__top">
+                <a class="nav__top-link" href="#">
+                    Вход
+                </a>
+                |
+                <a class="nav__top-link" href="#">
+                    Регистрация
+                </a>
+            </div>
+            <!-- Средний слой шапки -->
+            <div class="nav__contacts">
+                <img class="logo" src="./src/images/logo.png" alt="company logo">
+                <!-- Контейнер контактов -->
+                <div class="contacts__info-container">
+                    <div class="contacts__info">
+                        <h1>
+                            +1 234 567 89
+                        </h1>
+                        <p>
+                            Работаем <span class="text-highlight-1">c 9:00 до 21:00</span>
+                        </p>
+                    </div>
+                    <div class="contacts__info">
+                        <h1>
+                            +1 234 567 89
+                        </h1>
+                        <p>
+                            email: <span class="text-highlight-1">test@example.com</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Контейнер корзины -->
+                <div class="cart__container">
+                    <img class="cart-icon" src="./src/images/package.png" alt="">
+                    <p>
+                        В вашей корзине <span class="text-highlight-2">5 товаров</span>
+                        <br>
+                        на сумму <span class="text-price">10 624 руб.</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Контейнер навигации -->
+            <div class="nav__bottom">
+                <div class="navigation-links">
+                    <a class="navigation-link" href="">
+                        О компании
+                    </a>
+                    <a class="navigation-link" href="">
+                        Услуги
+                    </a>
+                    <a class="navigation-link" href="">
+                        Оплата и доставка
+                    </a>
+                    <a class="navigation-link" href="">
+                        Контакты
+                    </a>
+                </div>
+                <!-- Поисковая строка -->
+                <div class="nav__searchbar">
+                
+                    <input 
+                        class="search-bar"
+                        placeholder="Например, ортопедические подушки" 
+                        type="text"
+                    />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+
+    </header>
 </body>
+
 </html>
