@@ -1,1 +1,1 @@
-https://darksparkz1233.github.io/
+https://darksparkz1233.github.io/index.html
