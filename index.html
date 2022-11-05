@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Askerweb Website</title>
     <link rel="stylesheet" href="./src/scss/style.css">
+    <link rel="stylesheet" href="./src/scss/carousel.css">
     <!-- Шрифты (Roboto) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,20 +78,218 @@
                 </div>
                 <!-- Поисковая строка -->
                 <div class="nav__searchbar">
-                
-                    <input 
-                        class="search-bar"
-                        placeholder="Например, ортопедические подушки" 
-                        type="text"
-                    />
+
+                    <input class="search-bar" placeholder="Например, ортопедические подушки" type="text" />
                 </div>
             </div>
         </div>
     </nav>
 
-    <header>
+    <header class="test">
+        <!-- Боковое меню -->
+        <aside class="">
+            <div class="aside__container">
+                <div class="aside__catalog">
+                    <h1>Каталог</h1>
+                </div>
+
+                <div class="catalog__body">
+                    <a class="heading" href="#">Распродажа</a>
+                    <!-- Разделы товаров -->
+                    <details class="cataolg__list">
+                        <summary class="heading">Постельное белье</summary>
+                        <ul class="catalog__list">
+                            <li class="catalog__link">
+                                Комплекты постельного белья
+                            </li>
+
+                            <li class="catalog__link">
+                                1 спальные
+                            </li>
+                            <li class="catalog__link">
+                                1.5 спальные
+                            </li>
+                            <li class="catalog__link">
+                                2 спальные
+                            </li>
+                            <li class="catalog__link">
+                                Семейные
+                            </li>
+                            <li class="catalog__link">
+                                Евростандарт
+                            </li>
+                            <li class="catalog__link">
+                                Наволочки
+                            </li>
+                            <li class="catalog__link">
+                                Простыни
+                            </li>
+                            <li class="catalog__link">
+                                Пододеялники
+                            </li>
+                            <li class="catalog__link">
+                                Наматрасники
+                            </li>
+                        </ul>
+                    </details>
+
+                    <a href="#" class="heading">
+                        подушки
+                    </a>
+                    <a href="" class="heading">
+                        Подушки ортопедические
+                    </a>
+                    <a href="" class="heading">
+                        одеяла
+                    </a>
+                    <a href="" class="heading">
+                        матрацы
+                    </a>
+                    <a href="" class="heading">
+                        пледы
+                    </a>
+                    <a href="" class="heading">
+                        покрывала
+                    </a>
+                    <a href="" class="heading">
+                        бортики для кроватей
+                    </a>
+                    <a href="" class="heading">
+                        балдахины
+                    </a>
+                    <a href="" class="heading">
+                        шторы
+                    </a>
+                    <a href="" class="heading">
+                        тюль
+                    </a>
+
+                    <details>
+                        <summary>Кухонные преднадлежности</summary>
+                        <ul class="catalog__list">
+                            <li class="catalog__link">Полотенца</li>
+                            <li class="catalog__link">Скатерти</li>
+                            <li class="catalog__link">Салфетки</li>
+                        </ul>
+                    </details>
+
+                    <a href="" class="heading">
+                        Шторы
+                    </a>
+                    <a href="" class="heading">
+                        Тюль
+                    </a>
+
+                    <details>
+                        <summary>Для бани и ванной</summary>
+                        <ul class="catalog__list">
+                            <li class="catalog__link">
+                                Халаты
+                            </li>
+                            <li class="catalog__link">
+                                Полотенца
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Главная секция -->
+        <main>
+            <div class="main__container">
+                <div class="main__banners">
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="./src/images/carousel/1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="./src/images/carousel/1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="./src/images/carousel/1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="./src/images/carousel/1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="./src/images/carousel/1.png" style="width:100%">
+                        </div>
+
+                        <div class="dot__container" style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                    <div class="cards-container">
+                        <div class="banner-card">
+                            <img class="banner-img" src="./src/images/wallet.svg" alt="">
+                            <p>
+                                Удобный <br> способ оплаты
+                            </p>
+                        </div>
+                        <div class="banner-card">
+                            <img class="banner-img" src="./src/images/book.svg" alt="">
+                            <p>
+                                Сертификация <br> на товары
+                            </p>
+                        </div>
+                        <div class="banner-card">
+                            <img class="banner-img" src="./src/images/choice.svg" alt="">
+                            <p>
+                                Большой <br> выбор товара
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- *TODO - О компании -->
+            <div class="about-company__container">
+                <div class="about-company-1">
+                    <h1>
+                        О компании
+                    </h1>
+                </div>
+                <div class="about-company-2">
+                    <p>
+                        В широком ассортименте представлены комплекты постельного белья из сатина, бязи, поплина. Шикарные
+                        коллекции кпб для детей и подростков. Также, не ходя далеко, можно купить и различные постельные
+                        принадлежности: покрывала, одеяла, подушки.
+                        От нас сложно уйти без покупки!
+                    </p>
+                    <a href="#">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+        </main>
+
 
     </header>
-</body>
 
+
+
+
+    <script src="./src/js/carousel.js"></script>
+</body>
 </html>
